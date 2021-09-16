@@ -1,28 +1,38 @@
 <html>
     <head>
+    <title>Syatirah labex4</title>
+    <h2>Terminology</h2>
     </head>
 <body>
-
-<title>Syatirah 18DDT18F1064</title>
-<h2>Terminology</h2>
+    
+if(isset($_GET['add']))
 
 <table border ="1">
-
+    <tr>
+ <td><h5>Add New Term</h5>
  <form action="term.php" method="post">
-   
-<tr>
-    <td>Terms<br></td>
-   <td>Description</td>
-</tr>
-<tr>
-  <td><a href="admin_ndex.php">[Add New]</a><br></td>
-  <td></td>
-</tr>
- 
+    Term: <input type="text" name="nama"><br>
+   Description: <input type="text" name="nama"><br>
+    <center><input type="Submit"></td></center>
+    </tr>
     </form>
 
 </table>
 
+<br>
+
+<table border ="1">
+<tr>
+    <th>Terms</th>
+   <th>Description</th>
+</tr>
+<tr>
+  <td><a href="add">[Add New]</a><br></td>
+  <td></td>
+</tr>
+ </form>
+
+</table>
 </body>
 </html>
 
