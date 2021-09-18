@@ -4,20 +4,21 @@
     <h2>Terminology</h2>
     </head>
 <body>
-    
-if(isset($_GET['add']))
-
+  
+if{(isset($_GET['add']))}
+<fieldset>
 <table border ="1">
     <tr>
  <td><h5>Add New Term</h5>
  <form action="term.php" method="post">
-    Term: <input type="text" name="nama"><br>
-   Description: <input type="text" name="nama"><br>
+    Term: <input type="text" name="nama">
+   Description: <input type="text" name="nama">
     <center><input type="Submit"></td></center>
     </tr>
     </form>
-
+</fieldset>
 </table>
+
 
 <br>
 
@@ -27,12 +28,11 @@ if(isset($_GET['add']))
    <th>Description</th>
 </tr>
 <tr>
-  <td><a href="add">[Add New]</a><br></td>
+  <td><a href="add">[Add New]</a></td>
   <td></td>
 </tr>
- </form>
-
 </table>
+
 </body>
 </html>
 
