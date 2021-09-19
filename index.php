@@ -9,6 +9,7 @@
          <?php
             if(isset($_GET['add'])) {
                 ?>
+                }
             <form action="submit.php" method="post">
                 <fieldset>
                     <legend>Add New Terms</legend>
@@ -16,7 +17,7 @@
                         <tr>
                             <th>Terms</th>
                             <td><input type="text" name="terms"></td>
-            </tr>
+            </tr>   
             <tr>
                 <th>Description</th>
                 <td><textarea id="description" name="description"></textarea></td>
@@ -24,8 +25,10 @@
             <tr>
                 <td><input type="submit" name="save" value="Save"></td>
             </tr>
+            }
             </table>
         </fieldset>
+        </form>
         <table border="1">
             <tr>
                 <th>Terms</th>
@@ -64,7 +67,6 @@
                
             </tr>
             </table>
-    </form>
     </center>
 </body>
 </html>   
