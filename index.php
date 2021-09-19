@@ -17,15 +17,6 @@ if(isset($_GET['add'])
     </tr>
 )
     <?php
-    $myfile = fopen("newfile.txt", "w") or die ("Unable to open file!");
-    $txt = "John Doe\n";
-    fwrite($myfile, $txt);
-    $txt = "Jane Doe\n";
-    fwrite($myfile, $txt);
-    fclose($myfile);
-    ?>
-
-    <?php
     $terms = $_POST['terms'];
     $description = $POST['description'];
     $myfile = fopen ("terms/%terms.txt" , "w") or die ("Unable to open file!");
@@ -43,20 +34,6 @@ if(isset($_GET['add'])
     ?>
 
 <td>
-    <?php
-        if(isset($_GET['terms']))(
-            $terms = $_GET['terms'];
-            echo "<p><b>$terms</b></p>";
-            $handle = fopen("terms/$terms.txt" , "r");
-            $contents = fread($handle, filesize("terms/$terms.txt"));
-            fclose($handle);
-            print $contents;
-        )
-    ?>
-</td>
-    </form>
-</fieldset>
-</table>
 
 <td>
     <ul>
@@ -70,6 +47,9 @@ if(isset($_GET['add'])
         print $contents;
         )
 ?>
+    </form>
+</fieldset>
+</table>
 
 <?php
 // displaying file size using
