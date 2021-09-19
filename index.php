@@ -5,7 +5,7 @@
     </head>
 <body>
   
-if{(isset($_GET['add']))}
+if(isset($_GET['add'])
 <fieldset>
 <table border ="1">
     <tr>
@@ -15,7 +15,7 @@ if{(isset($_GET['add']))}
    Description: <input type="text" name="nama">
     <center><input type="Submit"></td></center>
     </tr>
-
+)
     <?php
     $myfile = fopen("newfile.txt", "w") or die ("Unable to open file!");
     $txt = "John Doe\n";
@@ -44,14 +44,14 @@ if{(isset($_GET['add']))}
 
 <td>
     <?php
-        if(isset($_GET['terms'])){
+        if(isset($_GET['terms']))(
             $terms = $_GET['terms'];
             echo "<p><b>$terms</b></p>";
             $handle = fopen("terms/$terms.txt" , "r");
             $contents = fread($handle, filesize("terms/$terms.txt"));
             fclose($handle);
             print $contents;
-        }
+        )
     ?>
 </td>
     </form>
@@ -61,14 +61,14 @@ if{(isset($_GET['add']))}
 <td>
     <ul>
         <?php
-        if (isset($_GET['terms'])){
+        if (isset($_GET['terms']))(
         $terms = $_GET['terms'];
         echo "<p><b>$terms</b></p>";
         $handle = fopen("$terms/$terms.txt", "r");
         $contents = fread($handle, filesize("$terms/$terms.txt"));
         fclose($handle);
         print $contents;
-        }
+        )
 ?>
 
 <?php
