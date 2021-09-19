@@ -25,7 +25,6 @@
             <tr>
                 <td><input type="submit" name="save" value="Save"></td>
             </tr>
-            }
             </table>
         </fieldset>
         </form>
