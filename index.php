@@ -97,7 +97,7 @@
       print $contents; 
      ?> 
       <p> 
-       <a href="submit.php?edit=<?php echo $terms; ?>">Edit</a> 
+       <a href="index.php?edit=<?php echo $terms; ?>">Edit</a> 
        <a href="delete.php?terms=<?php echo $terms; ?>">Delete</a> 
       </p> 
      <?php 
