@@ -2,3 +2,4 @@
 $myfile = 'terms/'.$terms.'.txt';
 unlink($myfile);
 header("location:index.php");
+?>
