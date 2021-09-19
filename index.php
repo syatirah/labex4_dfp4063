@@ -6,10 +6,10 @@
     <body>
         <center>
         <h2>Terminology</h2>
-         <?php
-            if(isset($_GET['add'])) {
-                ?>
-                }
+         <?php{
+            if(isset($_GET['add'])) 
+          } ?>
+                
             <form action="submit.php" method="post">
                 <fieldset>
                     <legend>Add New Terms</legend>
