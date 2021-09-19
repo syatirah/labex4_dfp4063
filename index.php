@@ -80,7 +80,7 @@
       foreach ($dir as $file) { 
        $terms = substr($file, 0, -4); 
        if (substr($file, -4) == '.txt') { 
-        echo "<ul><li><a href='index.php?terms=$terms'>terms</a></li></ul>"; 
+        echo "<ul><li><a href='index.php?terms=$terms'>$terms</a></li></ul>"; 
        } 
       } 
       ?> 
