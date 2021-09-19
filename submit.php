@@ -1,4 +1,3 @@
-
     <?php
     $terms = $_POST["terms"];
     $description = $_POST["description"];
